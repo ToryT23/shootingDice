@@ -23,12 +23,28 @@ namespace ShootingDice
              CreativeSmackTalkingPlayer alex = new CreativeSmackTalkingPlayer();
              alex.Name = "Alex";
 
-            alex.Play(wmd);
+            // alex.Play(wmd);
+
+            SoreLoserPlayer toney = new SoreLoserPlayer();
+             toney.Name = "toney";
+
+            //  toney.Play(alex);
+
+            UpperHalfPlayer vishal = new UpperHalfPlayer();
+            vishal.Name = "vishal";
+
+            // vishal.Play(toney);
 
             HumanPlayer lolo = new HumanPlayer ();
             lolo.Name = "lolo";
 
             // lolo.Play(tory);
+
+            SoreLoserUpperHalfPlayer josh = new SoreLoserUpperHalfPlayer();
+            josh.Name = "josh";
+
+            josh.Play(alex);
+
 
             Player player1 = new Player();
             player1.Name = "Bob";
