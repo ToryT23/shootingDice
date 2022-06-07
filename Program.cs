@@ -20,11 +20,15 @@ namespace ShootingDice
                 andrew.Name ="andrew";   
 
                 // andrew.Play(tory);
+             CreativeSmackTalkingPlayer alex = new CreativeSmackTalkingPlayer();
+             alex.Name = "Alex";
+
+            alex.Play(wmd);
 
             HumanPlayer lolo = new HumanPlayer ();
             lolo.Name = "lolo";
 
-            lolo.Play(tory);
+            // lolo.Play(tory);
 
             Player player1 = new Player();
             player1.Name = "Bob";
@@ -43,14 +47,14 @@ namespace ShootingDice
             Player player3 = new Player();
             player3.Name = "Wilma";
 
-            player3.Play(player2);
+            // player3.Play(player2);
 
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
 
-            player1.Play(large);
+            // player1.Play(large);
 
             Console.WriteLine("-------------------");
 
@@ -58,7 +62,7 @@ namespace ShootingDice
                 player1, player2, player3, large
             };
 
-            PlayMany(players);
+            // PlayMany(players);
         }
 
         static void PlayMany(List<Player> players)
